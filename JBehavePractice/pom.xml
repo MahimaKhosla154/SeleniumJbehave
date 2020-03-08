@@ -17,42 +17,40 @@
     <maven.version>3.2</maven.version>
     <groovy.version>2.4.7</groovy.version>
     <restassured.version>2.9.0</restassured.version>
+    <selenium.version></selenium.version>
   </properties>
   
   <build>
   <finalName>${project.artifactId}</finalName>
   </build>
 
-  <dependencies>
+  <dependencies>   
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.jbehave</groupId>
-      <artifactId>jbehave-core</artifactId>
-      <version>${jbehave.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>log4j</groupId>
-      <artifactId>jbehave-core</artifactId>
-      <version>${jbehave.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-java</artifactId>
-      <version>${selenium.version}</version>
-      <scope>test</scope>
-    </dependency>
-        <dependency>
       <groupId>com.jayway.restassured</groupId>
       <artifactId>rest-assured</artifactId>
       <version>${restassured.version}</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+   	  <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.17</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+    <groupId>com.thoughtworks.paranamer</groupId>
+    <artifactId>paranamer</artifactId>
+    <version>2.8</version>
+</dependency>
+    <dependency>
+    	<groupId>org.jbehave</groupId>
+    	<artifactId>jbehave-core</artifactId>
+    	<version>4.6.1</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.seleniumhq.selenium</groupId>
+    	<artifactId>selenium-java</artifactId>
+    	<version>3.141.59</version>
     </dependency>
   </dependencies>
 </project>

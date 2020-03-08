@@ -9,11 +9,18 @@ import java.lang.IllegalStateException;
 public class WebdriverUtility {
 	private static WebDriver driver = null;
 	
+	public static WebDriver getInstance() {
+		if (driver == null) {
+			throw new IllegalStateException("Webdriver needs to be initialized first. Aborthing.");
+		} 
+		return driver;
+	}
 
-    public static WebDriver getFireFox() {
+    public static WebDriver getFireFoxBrowser() {
         if (driver == null) {
             System.setProperty("webdriver.gecko.driver","/usr/local/bin/geckodriver");
-            return new FirefoxDriver();
+            driver = new FirefoxDriver();
+            return driver;
         }
         return driver;
     }
