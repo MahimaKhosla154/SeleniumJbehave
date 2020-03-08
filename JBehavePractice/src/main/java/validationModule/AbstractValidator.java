@@ -1,6 +1,5 @@
 package validationModule;
 
-import org.junit.Assert;
 
 public class AbstractValidator {
 	

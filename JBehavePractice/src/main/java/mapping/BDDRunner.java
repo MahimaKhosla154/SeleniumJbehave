@@ -35,7 +35,6 @@ public class BDDRunner extends JUnitStories {
 	
 	@Override
 	protected List<String> storyPaths() {
-		System.out.println("I am inside storyPaths");
 		return Arrays.asList("stories/FirstStory.story");
 	}
 }

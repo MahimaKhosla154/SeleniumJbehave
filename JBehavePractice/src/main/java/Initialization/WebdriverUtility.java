@@ -49,4 +49,8 @@ public class WebdriverUtility {
     	driver.get(url);
     }
     
+    public static void quitAllDriverSessions() {
+    	driver.close();
+    }
+    
 }
